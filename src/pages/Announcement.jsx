@@ -12,7 +12,7 @@ font-weight:500;
 `
  const Announcement = () => {
   return (
-    <Container> super deal!! free delivery on orders over MWK50,000</Container>
+    <Container> SUPER DEAL!!  FREE  DELIVERY  ON  ORDERS  OVER  MWK50,000</Container>
   )
 }
 export default Announcement
