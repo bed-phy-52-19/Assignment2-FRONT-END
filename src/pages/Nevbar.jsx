@@ -48,7 +48,7 @@ const Nevbar = () => {
         <Wrapper>
             <Left>
                 <Language>EN</Language>
-                <SearchContainer> <Input/>
+                <SearchContainer> <Input placeholder='search'/>
                 <Search style={{color:"gray", fontSize:16}}/>
                 </SearchContainer>
                    

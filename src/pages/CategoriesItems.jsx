@@ -9,21 +9,21 @@ position:relative;
 `;
 const Image = styled.img`
 width: 100%;
-height:90%;
+height:50%;
 object-fit:cover;
 `;
 const Info = styled.div`
 //  position :absolute;
 //  top :0%;
 // left :0;
-// width : 100%;
+ //width : 100%;
 // height: 100%;
 //  display: flex;
 //  flex-direction: column;
 // align-items: center;
 // justify-content: center;
 `;
-const Title = styled.h1`margin-bottom:1px;`;
+const Title = styled.h2`margin-bottom:1px; font-size:15;`;
 const Button = styled.button`border:none; padding:10px; background-color:gray; color:white;
  cursor:pointer; font-weight:600;`;
 
