@@ -24,7 +24,8 @@ height: 350px;
 align-items:center;
 display:flex;
 justify-content:center;
-background-color: gray;
+border-radius:0%;
+background-color: lightgray;
 position : relative;
 
 &:hover ${Infoma}{
@@ -44,7 +45,7 @@ const Image =styled.img`
    height:75%;
    z-index:2;
 `;
-
+const Desc =styled.h3`color:teal; `;
 const Icon =styled.div`
 width: 30px;
 height: 30px;
@@ -56,8 +57,9 @@ justify-content: center;
 margin: 10px;
 transition : all 0.5s ease;
 &:hover{
-  background-color: gray;
-  transform: scale(1.1;);
+  background-color:teal ;
+  transform: scale(1.1);
+  cursor:pointer;
 
 }
 `;
@@ -67,10 +69,12 @@ const ProductItems = ({item}) => {
     <Container>
         <Circle/>
         <Image src = {item.img}/>
+        
         <Infoma>
         <Icon><ShoppingCartOutlined/></Icon>
         <Icon><SearchOutlined/></Icon>
         <Icon><FavoriteBorderOutlined/></Icon>
+        <Desc>{item.desc}</Desc>
         </Infoma>
     </Container>
   )
