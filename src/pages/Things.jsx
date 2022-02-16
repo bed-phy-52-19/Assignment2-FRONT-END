@@ -1,3 +1,5 @@
+
+import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components"
 import Announcement from "./Announcement";
 import Footer from "./Footer";
@@ -39,6 +41,32 @@ margin-left:5px;
 padding:2px;
 `;
 const FilterSizeOption = styled.option``;
+const AddContainer = styled.div`
+width:50%;
+ display :flex;
+ align-items:center;
+ justify-content:space-between;
+`;
+const AmountContainer = styled.div`
+display:flex;
+align-items:center;
+font-weight:700;
+`;
+const Amount = styled.span`
+width:15px;
+height:30px;
+border-radius:10px;
+border:1px solid;
+align-items:center;
+justify-content:center;
+margin:0px 5px;
+`;
+const Button = styled.button`padding:5px;
+border:1px solid teal; background-color:white; cursor:pointer; font-weight:500;
+&:hover{
+    background-color:lightgray;
+}
+`;
 
 const Things = () => {
   return (
@@ -71,6 +99,14 @@ const Things = () => {
                         </FilterSize>
                     </Filter>
                 </FilterContainer>
+                <AddContainer>
+                    <AmountContainer>
+                        <Remove/>
+                        <Amount>1</Amount>
+                        <Add/>
+                    </AmountContainer>
+                </AddContainer>
+                <Button>ADD TO CART</Button>
             </InfoContainer>
         </Wrapper>
         <Newsletter/>
