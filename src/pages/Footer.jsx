@@ -46,8 +46,8 @@ margin-bottom:10px;
 `;
 
 const Right = styled.div`flex: 1;`;
-const ContactItem = styled.div``;
-const Payments = styled.img` width :10%; height:10%;`;
+const ContactItem = styled.div`display:flex; align-item:center; margin-bottom:10px;`;
+const Payments = styled.img` width :30%; height:30%; `;
 
 const Footer = () => {
   return (
@@ -93,15 +93,19 @@ const Footer = () => {
         <Right>
             <Title>Contact</Title>
             <ContactItem>
-                <Room/>Mbayani P.O Box 404 Blantyre;
+                <Room style={{marginRight:"10px"}}/>Mbayani P.O Box 404 Blantyre;
             </ContactItem>
             <ContactItem>
-               <Phone/> +265 99 38 27 065
+               <Phone style={{marginRight:"10px"}}/> +265 99 38 27 065
             </ContactItem>
             <ContactItem>
-                <MailOutline/>contact @ sadickchisomo3@gmail.com
+                <MailOutline style={{marginRight:"10px"}}/>contact @ sadickchisomo3@gmail.com
+            </ContactItem>
+            <ContactItem>
+               PAY YOUR BILLS THROUGH AIRTEL MONEY OR TNM MPAMBA AND FDH BANK
             </ContactItem>
             <Payments src = "FDH_BANK_logo-copy.png"/>
+        
             <Payments src = "download.png"/>
             <Payments src = "images.jpeg"/>
 

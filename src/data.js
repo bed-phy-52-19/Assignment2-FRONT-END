@@ -24,27 +24,27 @@ export const sliderItems = [
 export const categories = [
     {
         id:1,
-        img:"dress.jpg",
+        img:"tie.png",
         title: "RED DRESS",
     },
     {
         id:2,
-        img:"ponjo.jpg",
+        img:"shirt.png",
         title: "PONCHO",
     },
     {
         id:3,
-        img:"t-shirt.jpg",
+        img:"flower.png",
         title: "T-SHIRT",
     },
     {
         id:4,
-        img:"sue.jpg",
+        img:"child.png",
         title: "SUMMER",
     },
     {
-        id:3,
-        img:"jesy.png",
+        id:5,
+        img:"kid.png",
         title: "TOP",
     }
 ]
@@ -73,8 +73,8 @@ export const populerproducts = [
     },
     {
         id:5,
-        img:"68695-mobile-smartphone-design-iphone-apple-free-hd-image.png",
-        desc:"BRAND NEW!!"
+        img:"laptop-png-28820.png",
+        desc:"NEW LAPTOP!!"
     }
     ,
     {
@@ -90,8 +90,8 @@ export const populerproducts = [
     },
     {
         id:8,
-        img:"9-2-smartphone-png-picture.png",
-        desc:"BRAND NEW!!"
+        img:"laptop-png-28815.png",
+        desc:"Acer Laptop !!"
     },
 
 ]
