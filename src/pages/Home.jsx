@@ -7,15 +7,20 @@ import Slider from './Slider'
 import Products from './Products'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
+import Navber from './Navber'
+import Things from './Things'
 
 const Home = () => {
   return (
     <div>
       <Announcement/>
-        <Nevbar/>
+      <Nevbar/>
+      <Navber/>
+        
         <Slider/>
-        <Categories/>
-        <Products/>
+        <Things/>
+        {/* <Categories/> */}
+        {/* <Products/> */}
         <Newsletter/>
         <Footer/>
         </div>

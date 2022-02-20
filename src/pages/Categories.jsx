@@ -11,6 +11,7 @@ justify-content: space-between;
 const Categories = () => {
   return (
     <Container>
+      
 {categories.map(item=>(<CategoriesItems item = {item} key={item.id}/>))}
     </Container>
   )

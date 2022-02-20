@@ -71,8 +71,8 @@ border:1px solid teal; background-color:white; cursor:pointer; font-weight:500;
 const Things = () => {
   return (
     <Container>
-        <Nevbar/>
-        <Announcement/>
+        {/* <Nevbar/>
+        <Announcement/> */}
         <Wrapper>
             <ImgContainer>
             <Image src="dress.jpg"/>
@@ -109,8 +109,8 @@ const Things = () => {
                 <Button>ADD TO CART</Button>
             </InfoContainer>
         </Wrapper>
-        <Newsletter/>
-        <Footer/>
+        {/* <Newsletter/>
+        <Footer/> */}
     </Container>
   )
 }
