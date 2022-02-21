@@ -11,6 +11,7 @@ import { Component } from 'react';
 import ProductItems from './pages/ProductItems';
 import Products from './pages/Products';
 import Categories from './pages/Categories';
+import Shoe from './pages/Shoe';
 
 
 
@@ -25,6 +26,8 @@ const App = () =>{
   <Route path='login' element={<Login/>}/>
   <Route path='categories' element={<Categories/>}/>
   <Route path='products' element={<Products/>}/>
+  <Route path='shoe' element={<Shoe/>}/>
+  <Route path='itemlist' element={<Itemlist/>}/>
 </Routes>
 
 

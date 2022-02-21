@@ -1,15 +1,17 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom';
 import ProductItems from "./ProductItems";
+import { mobile } from '../Rensponsive';
 
 const Container =styled.div`
-height:15vh;
+height:10vh;
 background:teal;
 display:flex;
- justify-content:center;
+//  justify-content:center;
  align-items:center;
 opacity:8;
-justify-content:space-between;
+// justify-content:space-between;
+${mobile({backgroundColor:"red"})}
 
 `;
 
@@ -27,13 +29,11 @@ const Item =styled.li``;
 function Navber() {
   return (
     <Container>
-        <Items><Link to="">Home</Link></Items>
+        <Items><Link to="/">Home</Link></Items>
       
-        <Items><Link to="categories">Clothes</Link></Items>
+        <Items><Link to="itemlist">Clothes</Link></Items>
         <Items><Link to="products">Electronics</Link></Items>
-        <Items>Bags</Items>
-        <Items>Shoes</Items>
-        <Items>Special offer</Items>
+        <Items><Link to="shoe">Shoes</Link></Items>
 
     </Container>
   )

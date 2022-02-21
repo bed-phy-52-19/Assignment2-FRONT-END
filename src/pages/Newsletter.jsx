@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { Send } from '@material-ui/icons'
 import styled from 'styled-components'
 
@@ -43,11 +43,11 @@ color:white;
 const Newsletter = () => {
   return (
     <Container>
-        <Title>News letter</Title>
+        <Title >News letter</Title>
         <Descri>Get update from your favourite products</Descri>
         <Inputcont>
         <Input placeholder='Your email'/>
-        <Button><Send/></Button>
+        <Button ><Link to="gmail"><Send/></Link></Button>
         </Inputcont>
     </Container>
   )

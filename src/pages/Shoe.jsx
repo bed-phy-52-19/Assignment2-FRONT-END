@@ -1,31 +1,36 @@
 import styled from "styled-components"
-import { populerproducts } from "../data"
-import { mobile } from "../Rensponsive";
+import { shoes } from "../data"
 import Announcement from "./Announcement";
 import Footer from "./Footer";
+import Navber from "./Navber";
+import Nevbar from "./Nevbar";
 import Newsletter from "./Newsletter";
-import ProductItems  from "./ProductItems"
+import Shoes  from "./Shoes"
 
 const Container= styled.div`
-padding:20px;
+padding:10px;
 display : flex;
 flex-wrap:wrap;
 justify-content:space-between;
-${mobile({padding:"0px", flexDirection:"column"})};
+backgroung-color:pink;
+background-size:cover;
 `;
 
-const Products = () => {
+const Shoe = () => {
   return (
     <div>
       <Announcement/>
+    
     <Container>
-{populerproducts.map(item =>(
-<ProductItems item = {item} key={item.id}/>))}
+     
+{shoes.map(item =>(
+<Shoes item = {item} key={item.id}/>))}
+
     </Container>
     <Newsletter/>
-    <Footer/>
+ <Footer/>
     </div>
   )
 }
 
-export default Products
+export default Shoe

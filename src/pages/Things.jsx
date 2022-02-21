@@ -6,14 +6,14 @@ import Footer from "./Footer";
 import Nevbar from "./Nevbar";
 import Newsletter from "./Newsletter";
 
-const Container = styled.div``;
+const Container = styled.div`background-color:pink;`;
 const Wrapper = styled.div`padding:10px; display:flex;`;
 const ImgContainer = styled.div`flex:1;`;
-const Image = styled.img`width:100%; height:100%; object-fit:cover;`;
+const Image = styled.img`width:100%; height:80%; object-fit:cover;`;
 const InfoContainer = styled.div`flex:1; padding:0px 50px;`;
 const Title = styled.h1`font-weight:200;`;
-const Desc = styled.p`margin:20px 0px;`;
-const Price = styled.span`font-weight:100; font-size:40px;`;
+const Desc = styled.h3`margin:20px 0px; color:;`;
+const Price = styled.h1` color: blue;`;
 const FilterContainer = styled.div`
 width:40%;
 margin:30px 0px;
@@ -75,12 +75,13 @@ const Things = () => {
         <Announcement/> */}
         <Wrapper>
             <ImgContainer>
-            <Image src="dress.jpg"/>
+           <h2> special offer</h2>
+            <Image src="photo-1483985988355-763728e1935b.jpeg"/>
             </ImgContainer>
             <InfoContainer>
-                <Title>Dresses</Title>
-                <Desc>This are also some of colthes you can buy.
-                   and  its a new style from tunduma tanzania 
+                <Title>Special offer</Title>
+                <Desc>Here are some of the products we offer that are made from out side country and
+                     they are going at a cheep price considering the needs of our customers
                 </Desc>
                 <Price>MK12,000</Price>
                 <FilterContainer>

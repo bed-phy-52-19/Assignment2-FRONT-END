@@ -75,7 +75,7 @@ const Footer = () => {
         </Left>
         <Center>
 
-            <Title>Useful links</Title>
+            <Title>Useful infomation</Title>
             <List>
                 <ListItem>Home</ListItem>
                 <ListItem>Cart</ListItem>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <Room style={{marginRight:"10px"}}/>Mbayani P.O Box 404 Blantyre;
             </ContactItem>
             <ContactItem>
-               <Phone style={{marginRight:"10px"}}/> +265 99 38 27 065
+               <Phone style={{marginRight:"10px"}}/> +265 993 827 065
             </ContactItem>
             <ContactItem>
                 <MailOutline style={{marginRight:"10px"}}/>contact @ sadickchisomo3@gmail.com

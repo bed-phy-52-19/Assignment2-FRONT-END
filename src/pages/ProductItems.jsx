@@ -1,8 +1,9 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons"
 import styled from "styled-components"
+import { mobile } from "../Rensponsive";
 
 const Infoma =styled.div`
-opacity:0;
+ opacity:0;
 width:100%;
 height:100%;
 position: absolute;
@@ -14,6 +15,12 @@ display:flex;
 align-items: center;
 justify-content: center;
 transition: all 0.5s ease;
+&:hover{
+  opacity: 1;
+ background-color: ;
+  transform: scale(1.1);
+  cursor:pointer;
+}
 `;
 
 const Container =styled.div`
@@ -25,11 +32,14 @@ align-items:center;
 display:flex;
 justify-content:center;
 border-radius:0%;
-background-color: lightgray;
+background-color:;
 position : relative;
 
-&:hover ${Infoma}{
+&:hover {
   opacity: 1;
+  // background-color:teal ;
+  transform: scale(1.1);
+  cursor:pointer;
 }
 
 `;
@@ -39,11 +49,17 @@ height:200;
 border-radius:50%;
 backgroung-color:white;
 position: absolute;
+&:hover{
+  background-color:teal ;
+  transform: scale(1.1);
+  cursor:pointer;
+
 
 `;
 const Image =styled.img`
    height:75%;
    z-index:2;
+  //  ${mobile({height:"30vh"})};
 `;
 const Desc =styled.h3`color:teal; `;
 const Icon =styled.div`

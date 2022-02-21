@@ -1,19 +1,22 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { sliderItems } from "../data"
+import { mobile } from "../Rensponsive"
 const Container = styled.div`
 width:100%;
 height:120vh;
 display:flex;
-background-color:#e9ecea;
+background-color:pink;
 position:relative;
 overflow:hidden;
+${mobile({display:"none"})};
 `
 const Arrow = styled.div`
 width:2%;
 height :4%;
-background-color:#fff7f7;
+background-color:gray;
 border-radius:50%;
 display: flex;
 align-items:center;
@@ -42,7 +45,12 @@ const ImageContainer=styled.div`flex:1;
 height:100%;
 `;
 const Image = styled.img`
-height :80%;
+height :100%;
+
+transition : all 0.5s ease;
+&:hover{
+    transform: scale(1.1);
+    cursor:pointer;
 `;
 const InfoContainer=styled.div`flex:1; padding:50px;`;
 const Tittle = styled.h1``;
@@ -68,30 +76,7 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
-            {/* <Slide bg="fbf0f4">
-<ImageContainer>
-    <Image src="dots.png" />
-</ImageContainer>
-<InfoContainer> 
-    <Tittle>ONE SIDE TALL DRESS</Tittle>
-    <Desc>DON'T COMPROMISE ON STYLE! GET YOURS NOW!!!
-              <Desc>GET UP TO 50% DISCOUNT WOW!!!</Desc>  
-    </Desc>
-    <Button>SHOW NOW</Button>
-</InfoContainer>
-</Slide>
-<Slide bg="fcf1ed">
-<ImageContainer>
-    <Image src="tall.png" />
-</ImageContainer>
-<InfoContainer> 
-    <Tittle>NEW RELEASE DRESS</Tittle>
-    <Desc>DON'T COMPROMISE ON STYLE! GET YOURS NOW!!!
-              <Desc>GET UP TO 50% DISCOUNT WOW!!!</Desc>  
-    </Desc>
-    <Button>SHOW NOW</Button>
-</InfoContainer>
-</Slide> */}
+        
 {sliderItems.map(item=>(
     <Slide bg={item.bg} key={item.id}>
     <ImageContainer>
@@ -100,7 +85,7 @@ const Slider = () => {
     <InfoContainer> 
         <Tittle>{item.Tittle}</Tittle>
         <Desc>{item.Desc}</Desc>
-        <Button>SHOW NOW</Button>
+        <Button><Link to= "itemlist">SHOW MORE</Link></Button>
     </InfoContainer>
     </Slide>
 ))}

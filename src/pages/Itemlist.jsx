@@ -17,8 +17,7 @@ const Option = styled.option``;
 const Itemlist = () => {
   return (
     <Container>
-        <Nevbar/>
-        <Announcement/>
+      <Announcement/>
         <Title>Clothes</Title>
         <FilterContainer>
           <Filter><FilterText>filter products:</FilterText> </Filter>
@@ -54,8 +53,7 @@ const Itemlist = () => {
           </Select>
         </FilterContainer>
         <Categories/>
-        <Newsletter/>
-        <Footer/>
+      
     </Container>
   )
 }
