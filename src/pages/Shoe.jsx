@@ -12,8 +12,7 @@ padding:10px;
 display : flex;
 flex-wrap:wrap;
 justify-content:space-between;
-backgroung-color:pink;
-background-size:cover;
+
 `;
 
 const Shoe = () => {

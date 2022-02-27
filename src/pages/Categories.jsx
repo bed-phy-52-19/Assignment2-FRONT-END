@@ -4,12 +4,14 @@ import Announcement from "./Announcement";
 import CategoriesItems from "./CategoriesItems"
 import Footer from "./Footer";
 import Newsletter from "./Newsletter";
+import { mobile } from '../rensponsive';
 
 const Container = styled.div`
 display : flex;
 padding:2px;
 justify-content: space-between;
 flex-wrap:wrap;
+${mobile({padding:"0px" ,flexDirection:"column"})}
 `;
 
 const Categories = () => {

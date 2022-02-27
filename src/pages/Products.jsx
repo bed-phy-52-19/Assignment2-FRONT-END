@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { populerproducts } from "../data"
-import { mobile } from "../Rensponsive";
+import { mobile } from "../rensponsive";
 import Announcement from "./Announcement";
 import Footer from "./Footer";
 import Newsletter from "./Newsletter";

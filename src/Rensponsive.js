@@ -1,3 +1,4 @@
+
 import { css } from "styled-components"
 
 export const mobile = (props) => {
@@ -6,5 +7,5 @@ export const mobile = (props) => {
         ${props}
     }
     
-    `
+    `;
 };

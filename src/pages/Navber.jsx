@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom';
 import ProductItems from "./ProductItems";
-import { mobile } from '../Rensponsive';
+import { mobile } from '../rensponsive';
 
 const Container =styled.div`
 height:10vh;
@@ -11,7 +11,7 @@ display:flex;
  align-items:center;
 opacity:8;
 // justify-content:space-between;
-${mobile({backgroundColor:"red"})}
+${mobile({height:"30px"})}
 
 `;
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Send } from '@material-ui/icons'
 import styled from 'styled-components'
+import { mobile } from '../rensponsive';
 
 const Container = styled.div`
   height : 60vh;
@@ -19,6 +20,7 @@ const Descri = styled.div`
  font-size:25;
  font-weight:300;
  margin-bottom:18px;
+ ${mobile({textAlign:"center"})}
 `;
 const Inputcont = styled.div`
 width:40%;
@@ -27,6 +29,7 @@ background-color:white;
 display:flex;
 justify-content:space-between;
 border:1px solid lightgray;
+${mobile({width:"80%"})}
 `;
 const Input = styled.input`
 border:none;
@@ -46,8 +49,8 @@ const Newsletter = () => {
         <Title >News letter</Title>
         <Descri>Get update from your favourite products</Descri>
         <Inputcont>
-        <Input placeholder='Your email'/>
-        <Button ><Link to="gmail"><Send/></Link></Button>
+        <Input placeholder='Your feedback'/>
+        <Button><Link to="google.com"><Send/></Link></Button>
         </Inputcont>
     </Container>
   )

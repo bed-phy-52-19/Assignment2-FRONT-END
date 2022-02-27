@@ -1,6 +1,6 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons"
 import styled from "styled-components"
-import { mobile } from "../Rensponsive";
+import { mobile } from "../rensponsive";
 
 const Infoma =styled.div`
  opacity:0;

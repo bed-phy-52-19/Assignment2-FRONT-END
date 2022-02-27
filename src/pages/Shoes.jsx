@@ -29,6 +29,8 @@ flex:1;
 // margin:5px;
 min-width :280px;
 background-color:;
+backgroung-color:pink;
+background-size:cover;
 height: 350px;
 align-items:center;
 display:flex;

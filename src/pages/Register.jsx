@@ -1,5 +1,8 @@
+import React, {useState} from "react";
 import styled from "styled-components"
 import Footer from "./Footer";
+import Newsletter from "./Newsletter"
+import { mobile } from '../rensponsive';
 
 const Container = styled.div`
 width:100vw;
@@ -9,7 +12,7 @@ background: url("eCommerce-online-shopping-india-1024x683.jpg") center;
 display:flex;
 align-items:center;
 justify-content: center;
-
+ ${mobile({height:"30px"})}
 `;
 const Wrapper= styled.div`
 width:40%;
@@ -45,27 +48,52 @@ color:white;
 cursor:pointer;
 `;
 
-const Register = () => {
+const Register = () =>{
+  const [name, setName] = useState("")
+  const [phonenumber, setPhonenumber] = useState()
+  const [address, setAddress] = useState("")
+  const [email, setEmail] = useState("")
+  const [product, setProduct] = useState("")
+  const [country, setCountry] = useState("")
+
+   async function signup () {
+   
+    let item ={name,phonenumber,address,email,product,country}
+    console.warn(item)
+     let result = await fetch("https://chisoonlineshopping.herokuapp.com/swagger-ui/index.html" ,{
+      method:'POST',
+      body:JSON.stringify(item),
+
+      headers:{
+        "Content-Type":'application/json',
+        "Accept":'application/json'
+      }
+    })
+    result = await result.json();
+     console.warn("result", result);
+  }
+
   return (
     <div>
     <Container>
         <Wrapper>
-            <Title>CREATE AN ACCOUNT</Title>
+            <Title>PROVIDE YOUR DETAILS </Title>
             <Form>
-                <Input placeholder="name"/>
-                <Input placeholder="surname"/>
-                <Input placeholder="Email address"/>
-                <Input placeholder="location"/>
-                <Input placeholder="phone number"/>
-                <Input placeholder="mode of payment"/>
-                <Agreement>By creating an account , you have to read all 
-                    terms and condition since all terma and conditions will apply
+                <Input type="text" value={name} onChange={(e)=>setName(e.target.value)} className="form-control" placeholder="name"/>
+                <Input type="number" value={phonenumber} onChange={(e)=>setPhonenumber(e.target.value)} className="form-control" placeholder="phonenumber"/>
+                <Input type="text" value={address} onChange={(e)=>setAddress(e.target.value)} className="form-control" placeholder="address"/>
+                <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className="form-control" placeholder="email"/>
+                <Input type="text" value={product} onChange={(e)=>setProduct(e.target.value)} className="form-control" placeholder="product"/>
+                <Input type="text" value={country} onChange={(e)=>setCountry(e.target.value)} className="form-control" placeholder="country"/>
+                <Agreement>By providing your details we will be able to deliver the products and you have to read all 
+                    terms and condition since all terms and conditions will apply
                       <b>. TERMS AND CONDITIONS</b>
                 </Agreement>
-                <Button>CREATE</Button>
+                <Button onClick={signup} className="btn btn-primary">submit</Button>
             </Form>
         </Wrapper>
     </Container>
+    <Newsletter/>
     <Footer/>
     </div>
   )

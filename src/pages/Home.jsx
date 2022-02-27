@@ -19,7 +19,7 @@ const Home = () => {
       <Announcement/>
       <Nevbar/>
       <Navber/>
-        <h2>Popular products</h2>
+        <h2>ALL THESE PRODUCTS FROM CHISO SHOPPING </h2>
         <Slider/>
         <Things/>
         {/* <Categories/> */}

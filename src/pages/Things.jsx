@@ -75,7 +75,7 @@ const Things = () => {
         <Announcement/> */}
         <Wrapper>
             <ImgContainer>
-           <h2> special offer</h2>
+           <h2>All these products are available at chiso shopping at affordable prices!!!</h2>
             <Image src="photo-1483985988355-763728e1935b.jpeg"/>
             </ImgContainer>
             <InfoContainer>

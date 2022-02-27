@@ -1,5 +1,6 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons"
 import  styled  from "styled-components"
+import { mobile } from '../rensponsive';
 
 const Div = styled.body`background-color: url('eCommerce-online-shopping-india-1024x683.jpg') no-repeat;
 background-size:cover;`;
@@ -57,6 +58,7 @@ const Image = styled.img`
 width: 100%;
 height:100%;
 object-fit:cover;
+${mobile({height:"30vh"})}
 `;
 
 const Title = styled.h4`margin-bottom:1px; font-size:15;
